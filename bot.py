@@ -63,7 +63,7 @@ def print_delay(delay):
     print_("Waiting Done, Starting....\n")
        
 def main():
-    selector_task = 'y
+    selector_task = 'y'
     selector_game = 'y'
     selector_fusion = 'n'
     selector_max = 'y'
