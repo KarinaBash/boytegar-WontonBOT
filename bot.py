@@ -167,10 +167,10 @@ def main():
                             print_(f'Bonus Round: {hasBonus}')
                             time.sleep(random.randint(20,25))
                             stats = data.get('stats')
-                            rand = random.randint(1000,1001)
+                            rand = random.randint(2000,3001)
                             points = rand
                             if selector_max =='y':
-                                rand = random.randint(1000,1001)
+                                rand = random.randint(2000,3001)
                                 points = rand
                             finish_data = wonton.finish_game(token, points, hasBonus)
                             if finish_data is not None:
