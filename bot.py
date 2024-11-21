@@ -170,7 +170,7 @@ def main():
                             rand = random.randint(900,1000)
                             points = rand*stats
                             if selector_max =='y':
-                                rand = random.randint(900,10000)
+                                rand = random.randint(900,1000)
                                 points = rand*stats
                             finish_data = wonton.finish_game(token, points, hasBonus)
                             if finish_data is not None:
