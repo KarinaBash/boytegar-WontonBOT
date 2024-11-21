@@ -63,10 +63,10 @@ def print_delay(delay):
     print_("Waiting Done, Starting....\n")
        
 def main():
-    selector_task = input("auto clear task y/n : ").strip().lower()
-    selector_game = input("auto play game y/n : ").strip().lower()
-    selector_fusion = input("auto fusion wonton y/n : ").strip().lower()
-    selector_max = input("basic score wonton *80-100 = y, basic score wonton *50-80 = n : ").strip().lower()
+    selector_task = 'y
+    selector_game = 'y'
+    selector_fusion = 'n'
+    selector_max = 'y'
     while True:
         delete_all()
         start_time = time.time()
@@ -167,10 +167,10 @@ def main():
                             print_(f'Bonus Round: {hasBonus}')
                             time.sleep(random.randint(20,25))
                             stats = data.get('stats')
-                            rand = random.randint(10000,20000)
+                            rand = random.randint(900,1000)
                             points = rand*stats
                             if selector_max =='y':
-                                rand = random.randint(10000,20000)
+                                rand = random.randint(900,10000)
                                 points = rand*stats
                             finish_data = wonton.finish_game(token, points, hasBonus)
                             if finish_data is not None:
